@@ -51,12 +51,12 @@
                <label for="nameBox">Name*</label>
                <input name="custName" id="nameBox" placeholder="First and Last Name" required/>
             </div>
-
+            <br/>
             <div>
                <label for="phoneBox">Phone*</label>
                <input name="custPhone" id="phoneBox" placeholder="(nnn) nnn-nnnn" pattern="^\(?\d{3}\)?[-\s]?\d{3}[-\s]?\d{4}$" required />
             </div>
-
+            <br/>
             <div>
                <label for="orderType">Delivery</label>
                <input name="orderType" id="delivery" type="radio" />
@@ -66,16 +66,24 @@
                <label for="orderType">Takeout</label>
                <input name="orderType" id="takeout" type="radio" />
             </div>
-
+            <br/>
             <fieldset id="deliveryInfo">
                <legend>Delivery Options</legend>
                <lebel for="addressbox">Address</lebel>
                <textarea id="addressBox" name="delAddress" placeholder="Enter delivery address"></textarea>
                <br/>
                <br/>
-               <label for="delBox">Delivery Time (leave blank for earliest delivery)</label>
-               <input type="time"/>
+               <label for="delTime">Delivery Time (leave blank for earliest delivery)</label>
+               <input name="" type="time"/>
             </fieldset>
+
+            <fieldset>
+               <legend>Pickup Options</legend>
+               <label for="">Pickup Time (leave blank for earliest pickup)</label>
+               <input id="pickupBox" name="pickupTime" type="time" disabled>
+            </fieldset>
+
+            <button>Begin Building your Order</button>
 
          </form>
          
