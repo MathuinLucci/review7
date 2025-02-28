@@ -58,36 +58,39 @@
             </div>
             <br/>
             <div>
-               <label for="orderType">Delivery</label>
-               <input name="orderType" id="delivery" type="radio" />
+               
+               <input name="orderType" id="delivery" type="radio" checked/>
+               <label for="delivery">Delivery</label>
                
                |
                
-               <label for="orderType">Takeout</label>
-               <input name="orderType" id="takeout" type="radio" />
+               <input name="orderType" id="pickup" type="radio" />
+               <label for="orderType">Pickup</label>
             </div>
+
             <br/>
+
             <fieldset id="deliveryInfo">
                <legend>Delivery Options</legend>
-               <lebel for="addressbox">Address</lebel>
                <textarea id="addressBox" name="delAddress" placeholder="Enter delivery address"></textarea>
-               <br/>
-               <br/>
-               <label for="delTime">Delivery Time (leave blank for earliest delivery)</label>
-               <input name="" type="time"/>
+               <div>
+                  <label for="delTime">Delivery Time (leave blank for earliest delivery)</label>
+                  <input name="delTime" id="delBox" type="time"/>
+               </div>
             </fieldset>
-
-            <fieldset>
+                  
+            <fieldset id="pickupInfo">
                <legend>Pickup Options</legend>
-               <label for="">Pickup Time (leave blank for earliest pickup)</label>
+               <label for="pickupBox">Pickup Time (leave blank for earliest pickup)</label>
                <input id="pickupBox" name="pickupTime" type="time" disabled>
             </fieldset>
 
-            <button>Begin Building your Order</button>
+            <div>
+               <input type="submit" value="Begin Building your Order" />
+            </div>
 
          </form>
-         
-         
+                  
    </section>
 
    <footer>
