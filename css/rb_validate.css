@@ -14,3 +14,16 @@
 
 /* Validation Styles */
 
+input:focus, select:focus, textarea:focus {
+   background-color: rgb(255, 255, 180);
+}
+
+nameBox:focus:valid, phoneBox:focus:valid {
+   background-color: rgb(220, 255, 180);
+   background: url(../img/rb_okay.png) right no-repeat;
+}
+
+nameBox:focus:invalid, phoneBox:focus:invalid {
+   background-color: rgb(255, 255, 230);
+   background: url(../img/rb_warning.png) right no-repeat;
+}
